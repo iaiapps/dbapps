@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/spectre/spectre.min.css" />
+    <link rel="stylesheet" href="assets/spectre/spectre-icons.min.css" />
+    <link rel="stylesheet" href="assets/themify/themify-icons.css" />
+    <link rel="stylesheet" href="css/app.css" />
+
+    <title>Form Siswa</title>
+  </head>
+  <body>
+    <div class="container grid-md bg-gray">
+      <form class="px-2 mx-2" id="form">
+        <fieldset>
+          <br />
+          <h3 class="text-center bg-primary p-2">FORMULIR PESERTA DIDIK</h3>
+          <br />
+
+          <!-- Data Pribadi -->
+          <h4>Data Pribadi</h4>
+          <hr class="text-primary" />
+
+          <div class="form-group pt-2">
+            <label class="form-label" for="namalengkap">Nama Lengkap</label>
+            <input
+              class="form-input"
+              type="text"
+              id="namalengkap"
+              placeholder="Nama Lengkap"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Jenis Kelamin</label>
+            <label class="form-radio">
+              <input type="radio" name="gender" checked />
+              <i class="form-icon"></i> Laki-laki
+            </label>
+            <label class="form-radio">
+              <input type="radio" name="gender" />
+              <i class="form-icon"></i> Perempuan
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="nik">NISN</label>
+            <input
+              class="form-input"
+              type="number"
+              name="number"
+              id="nik"
+              placeholder="NIK"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="nik"
+              >NIK/No. KITAS (Untuk WNA)</label
+            >
+            <input
+              class="form-input"
+              type="number"
+              name="number"
+              id="nik"
+              placeholder="NIK"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="nik">No KK</label>
+            <input
+              class="form-input"
+              type="number"
+              name="number"
+              id="nik"
+              placeholder="NIK"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="tempatlahir">Tempat Lahir</label>
+            <input
+              class="form-input"
+              type="text"
+              id="tempatlahir"
+              placeholder="Tempat Lahir"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="tanggallahir">Tanggal Lahir</label>
+            <input
+              class="form-input"
+              type="date"
+              id="tanggallahir"
+              placeholder="Tanggal Lahir"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="nik"
+              >No Regsitrasi Akta Kelahiran</label
+            >
+            <input
+              class="form-input"
+              type="number"
+              name="number"
+              id="nik"
+              placeholder="NIK"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="agama&kepercayaan"
+              >Agama & Kepercayaan (masukkan dua digit angka ex: 01)
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>01) Islam</li>
+                        <li>02) Kristen/Protestan</li>
+                        <li>03) Katholik</li>
+                        <li>04) Hindu</li>
+                        <li>05) Budha</li>
+                        <li>06) Khong Hu Chu</li>
+                        <li>07) Kepercayaan Kpd Tuhan YME</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="number"
+                id="agama&kepercayaan"
+                placeholder="Agama & Kepercayaan"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Kewarganegaraan</label>
+            <label class="form-radio">
+              <input type="radio" name="country" checked />
+              <i class="form-icon"></i> Indonesia (WNI)
+            </label>
+            <label class="form-radio">
+              <input type="radio" name="country" />
+              <i class="form-icon"></i> Asing (WNA)
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="statuskepegawaian"
+              >Mampu menangani kebutuhan khusus
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>01) Tidak</li>
+                        <li>02) Netra (A)</li>
+                        <li>03) Rungu (B)</li>
+                        <li>04) Grahita ringan (C)</li>
+                        <li>05) Grahita Sedang (C1)</li>
+                        <li>06) Daksa Ringan (D)</li>
+                        <li>07) Daksa Sedang (D1)</li>
+                        <li>08) Laras (E)</li>
+                        <li>09) Wicara (F)</li>
+                        <li>10) Tuna ganda (G)</li>
+                        <li>11) Hiper aktif (H)</li>
+                        <li>12) Cerdas Istimewa (i)</li>
+                        <li>13) Bakat Istimewa (J)</li>
+                        <li>14) Kesulitan Belajar (K)</li>
+                        <li>15) Narkoba (N)</li>
+                        <li>16) Indigo (O)</li>
+                        <li>17) Down Sindrome (P)</li>
+                        <li>18) Autis (Q)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="text"
+                id="statuskepegawaian"
+                placeholder="Status Kepegawaian"
+                pattern="\d{2}"
+                data-bouncer-message="isi dengan format dua digit angka ex: 01"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="alamatjalan">Alamat Jalan</label>
+            <textarea
+              class="form-input"
+              type="textarea"
+              id="alamatjalan"
+              placeholder="Alamta Jalan"
+              rows="1"
+              required
+            >
+            </textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="rt"
+              >RT
+              <input
+                class="form-input"
+                type="number"
+                id="rt"
+                placeholder="RT"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="rt"
+              >RW<input
+                class="form-input"
+                type="number"
+                id="rt"
+                placeholder="RT"
+                required
+            /></label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="namadusun">Nama Dusun</label>
+            <input
+              class="form-input"
+              type="text"
+              id="namadusun"
+              placeholder="Nama Dusun"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="desa/kelurahan"
+              >Desa/Kelurahan</label
+            >
+            <input
+              class="form-input"
+              type="text"
+              id="desa/kelurahan"
+              placeholder="Desa"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="kecamatan">Kecamatan</label>
+            <input
+              class="form-input"
+              type="text"
+              id="kecamatan"
+              placeholder="Kecamatan"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="kodepos"
+              >Kode POS<input
+                class="form-input"
+                type="number"
+                id="kodepos"
+                placeholder="Kode POS"
+                required
+            /></label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="lintang"
+              >Lintang<input
+                class="form-input"
+                type="number"
+                id="lintang"
+                placeholder="Lintang"
+                required
+            /></label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="bujur"
+              >Bujur<input
+                class="form-input"
+                type="number"
+                id="bujur"
+                placeholder="Bujur"
+                required
+            /></label>
+          </div>
+
+          <div class="form-group pt-2">
+            <label class="form-label form-inline" for="statuskepegawaian"
+              >Tempat Tinggal (masukkan dua digit angka ex: 01)
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>01) Bersama Orang Tua</li>
+                        <li>02) Wali</li>
+                        <li>03) Kos</li>
+                        <li>04) Asrama</li>
+                        <li>05) Panti Asuhan</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="text"
+                id="statuskepegawaian"
+                placeholder="Status Kepegawaian"
+                pattern="\d{2}"
+                data-bouncer-message="isi dengan format dua digit angka ex: 01"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-group pt-2">
+            <label class="form-label form-inline" for="statuskepegawaian"
+              >Moda Transportasi (masukkan dua digit angka ex: 01)
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>01) Jalan kaki</li>
+                        <li>02) Kendaraan pribadi</li>
+                        <li>03) Kendaraan Umum/angkot/Pete-pete</li>
+                        <li>04) Jemputan Sekolah</li>
+                        <li>05) Kereta Api</li>
+                        <li>06) Ojek</li>
+                        <li>07) Andong/Bendi/Sado/Dokar/Delman/Becak</li>
+                        <li>08) Perahu penyebrangan/Rakit/Getek</li>
+                        <li>99) Lainnya</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="text"
+                id="statuskepegawaian"
+                placeholder="Status Kepegawaian"
+                pattern="\d{2}"
+                data-bouncer-message="isi dengan format dua digit angka ex: 01"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="lintang"
+              >Anak Ke berapa
+              <input
+                class="form-input"
+                type="number"
+                id="lintang"
+                placeholder="Lintang"
+                required
+            /></label>
+          </div>
+
+          <div class="form-group pt-2">
+            <label class="form-label">Apakah Punya KIP</label>
+            <label class="form-radio">
+              <input type="radio" name="gender" checked />
+              <i class="form-icon"></i> YA
+            </label>
+            <label class="form-radio">
+              <input type="radio" name="gender" />
+              <i class="form-icon"></i> TIDAK
+            </label>
+          </div>
+
+          <div class="form-group pt-2">
+            <label class="form-label"
+              >Apakah Peserta didik tersebut tetap akan menerima KIP</label
+            >
+            <label class="form-radio">
+              <input type="radio" name="gender" checked />
+              <i class="form-icon"></i> YA
+            </label>
+            <label class="form-radio">
+              <input type="radio" name="gender" />
+              <i class="form-icon"></i> TIDAK
+            </label>
+          </div>
+
+          <div class="form-group pt-2">
+            <label class="form-label form-inline" for="statuskepegawaian"
+              >Alasan menolak PIP (masukkan dua digit angka ex: 01)
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>
+                          01) Dilarang pemda karena menerima bantuan serupa
+                        </li>
+                        <li>02) Menolak</li>
+                        <li>03) Sudah Mampu</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="text"
+                id="statuskepegawaian"
+                placeholder="Status Kepegawaian"
+                pattern="\d{2}"
+                data-bouncer-message="isi dengan format dua digit angka ex: 01"
+                required
+              />
+            </label>
+          </div>
+
+          <br />
+          <h4>Data Ayah Kandung</h4>
+          <hr class="text-primary" />
+
+          <div class="form-group pt-2">
+            <label class="form-label" for="namalengkap"
+              >Nama Ayah Kandung</label
+            >
+            <input
+              class="form-input"
+              type="text"
+              id="namalengkap"
+              placeholder="Nama Lengkap"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="nik">NIK Ayah</label>
+            <input
+              class="form-input"
+              type="number"
+              name="number"
+              id="nik"
+              placeholder="NIK"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="nik">Tahun Lahir</label>
+            <input
+              class="form-input"
+              type="number"
+              name="number"
+              id="nik"
+              placeholder="NIK"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="pekerjaansuami/istri"
+              >Pendidikan (masukkan dua digit angka ex: 01)
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>01) Tidak sekolah</li>
+                        <li>02) Putus SD</li>
+                        <li>03) SD Sederajat</li>
+                        <li>04) SMP Sederajat</li>
+                        <li>05) SMA Sederajat</li>
+                        <li>06) D1</li>
+                        <li>07) D2</li>
+                        <li>08) D3</li>
+                        <li>09) D4/S1</li>
+                        <li>10) S2</li>
+                        <li>11) S3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="number"
+                id="pekerjaansuami/istri"
+                placeholder="Pekerjaan Suami/Istri"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="pekerjaansuami/istri"
+              >Pekerjaan Suami/Istri (masukkan dua digit angka ex: 01)
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>01) Tidak Bekerja</li>
+                        <li>02) Nelayan</li>
+                        <li>03) Petani</li>
+                        <li>04) Peternak</li>
+                        <li>05) PNS/TNI/Polri</li>
+                        <li>06) GTT/PTT</li>
+                        <li>07) Pedagang Kecil</li>
+                        <li>08) Pedagang Besar</li>
+                        <li>09) Karyawan Swasta</li>
+                        <li>10) Wirausaha</li>
+                        <li>11) Pensiunan</li>
+                        <li>12) Buruh</li>
+                        <li>13) Sudah Meninggal</li>
+                        <li>14) TKI</li>
+                        <li>15) Tidak Dapat Diterapkan</li>
+                        <li>16) Tidak Bekerja</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="number"
+                id="pekerjaansuami/istri"
+                placeholder="Pekerjaan Suami/Istri"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="pekerjaansuami/istri"
+              >Penghasilan bulanan (masukkan dua digit angka ex: 01)
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>01) < Rp. 500.000</li>
+                        <li>02) Rp. 500.000-Rp.999.999</li>
+                        <li>03) Rp. 1.000.000-Rp.1.999.999</li>
+                        <li>04) Rp.2.000.000-Rp.4.999.999</li>
+                        <li>05) Rp.5.000.000-Rp.20.000.000</li>
+                        <li>06) > Rp.20.000.000</li>
+                        <li>07) Tidak Berpenghasilan</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="number"
+                id="pekerjaansuami/istri"
+                placeholder="Pekerjaan Suami/Istri"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="statuskepegawaian"
+              >Mampu menangani kebutuhan khusus
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>01) Tidak</li>
+                        <li>02) Netra (A)</li>
+                        <li>03) Rungu (B)</li>
+                        <li>04) Grahita ringan (C)</li>
+                        <li>05) Grahita Sedang (C1)</li>
+                        <li>06) Daksa Ringan (D)</li>
+                        <li>07) Daksa Sedang (D1)</li>
+                        <li>08) Laras (E)</li>
+                        <li>09) Wicara (F)</li>
+                        <li>10) Tuna ganda (G)</li>
+                        <li>11) Hiper aktif (H)</li>
+                        <li>12) Cerdas Istimewa (i)</li>
+                        <li>13) Bakat Istimewa (J)</li>
+                        <li>14) Kesulitan Belajar (K)</li>
+                        <li>15) Narkoba (N)</li>
+                        <li>16) Indigo (O)</li>
+                        <li>17) Down Sindrome (P)</li>
+                        <li>18) Autis (Q)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="text"
+                id="statuskepegawaian"
+                placeholder="Status Kepegawaian"
+                pattern="\d{2}"
+                data-bouncer-message="isi dengan format dua digit angka ex: 01"
+                required
+              />
+            </label>
+          </div>
+
+          <br />
+          <h4>Data Ibu Kandung</h4>
+          <hr class="text-primary" />
+
+          <div class="form-group pt-2">
+            <label class="form-label" for="namalengkap">Nama Ibu Kandung</label>
+            <input
+              class="form-input"
+              type="text"
+              id="namalengkap"
+              placeholder="Nama Lengkap"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="nik">NIK Ibu</label>
+            <input
+              class="form-input"
+              type="number"
+              name="number"
+              id="nik"
+              placeholder="NIK"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="nik">Tahun Lahir</label>
+            <input
+              class="form-input"
+              type="number"
+              name="number"
+              id="nik"
+              placeholder="NIK"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="pekerjaansuami/istri"
+              >Pendidikan (masukkan dua digit angka ex: 01)
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>01) Tidak sekolah</li>
+                        <li>02) Putus SD</li>
+                        <li>03) SD Sederajat</li>
+                        <li>04) SMP Sederajat</li>
+                        <li>05) SMA Sederajat</li>
+                        <li>06) D1</li>
+                        <li>07) D2</li>
+                        <li>08) D3</li>
+                        <li>09) D4/S1</li>
+                        <li>10) S2</li>
+                        <li>11) S3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="number"
+                id="pekerjaansuami/istri"
+                placeholder="Pekerjaan Suami/Istri"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="pekerjaansuami/istri"
+              >Pekerjaan Suami/Istri (masukkan dua digit angka ex: 01)
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>01) Tidak Bekerja</li>
+                        <li>02) Nelayan</li>
+                        <li>03) Petani</li>
+                        <li>04) Peternak</li>
+                        <li>05) PNS/TNI/Polri</li>
+                        <li>06) GTT/PTT</li>
+                        <li>07) Pedagang Kecil</li>
+                        <li>08) Pedagang Besar</li>
+                        <li>09) Karyawan Swasta</li>
+                        <li>10) Wirausaha</li>
+                        <li>11) Pensiunan</li>
+                        <li>12) Buruh</li>
+                        <li>13) Sudah Meninggal</li>
+                        <li>14) TKI</li>
+                        <li>15) Tidak Dapat Diterapkan</li>
+                        <li>16) Tidak Bekerja</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="number"
+                id="pekerjaansuami/istri"
+                placeholder="Pekerjaan Suami/Istri"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="pekerjaansuami/istri"
+              >Penghasilan bulanan (masukkan dua digit angka ex: 01)
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>01) < Rp. 500.000</li>
+                        <li>02) Rp. 500.000-Rp.999.999</li>
+                        <li>03) Rp. 1.000.000-Rp.1.999.999</li>
+                        <li>04) Rp.2.000.000-Rp.4.999.999</li>
+                        <li>05) Rp.5.000.000-Rp.20.000.000</li>
+                        <li>06) > Rp.20.000.000</li>
+                        <li>07) Tidak Berpenghasilan</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="number"
+                id="pekerjaansuami/istri"
+                placeholder="Pekerjaan Suami/Istri"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="statuskepegawaian"
+              >Mampu menangani kebutuhan khusus
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>01) Tidak</li>
+                        <li>02) Netra (A)</li>
+                        <li>03) Rungu (B)</li>
+                        <li>04) Grahita ringan (C)</li>
+                        <li>05) Grahita Sedang (C1)</li>
+                        <li>06) Daksa Ringan (D)</li>
+                        <li>07) Daksa Sedang (D1)</li>
+                        <li>08) Laras (E)</li>
+                        <li>09) Wicara (F)</li>
+                        <li>10) Tuna ganda (G)</li>
+                        <li>11) Hiper aktif (H)</li>
+                        <li>12) Cerdas Istimewa (i)</li>
+                        <li>13) Bakat Istimewa (J)</li>
+                        <li>14) Kesulitan Belajar (K)</li>
+                        <li>15) Narkoba (N)</li>
+                        <li>16) Indigo (O)</li>
+                        <li>17) Down Sindrome (P)</li>
+                        <li>18) Autis (Q)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="text"
+                id="statuskepegawaian"
+                placeholder="Status Kepegawaian"
+                pattern="\d{2}"
+                data-bouncer-message="isi dengan format dua digit angka ex: 01"
+                required
+              />
+            </label>
+          </div>
+
+          <br />
+          <h4>Data Wali</h4>
+          <hr class="text-primary" />
+
+          <div class="form-group pt-2">
+            <label class="form-label" for="namalengkap">Nama Wali</label>
+            <input
+              class="form-input"
+              type="text"
+              id="namalengkap"
+              placeholder="Nama Lengkap"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="nik">NIK wali</label>
+            <input
+              class="form-input"
+              type="number"
+              name="number"
+              id="nik"
+              placeholder="NIK"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="nik">Tahun Lahir</label>
+            <input
+              class="form-input"
+              type="number"
+              name="number"
+              id="nik"
+              placeholder="NIK"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="pekerjaansuami/istri"
+              >Pendidikan (masukkan dua digit angka ex: 01)
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>01) Tidak sekolah</li>
+                        <li>02) Putus SD</li>
+                        <li>03) SD Sederajat</li>
+                        <li>04) SMP Sederajat</li>
+                        <li>05) SMA Sederajat</li>
+                        <li>06) D1</li>
+                        <li>07) D2</li>
+                        <li>08) D3</li>
+                        <li>09) D4/S1</li>
+                        <li>10) S2</li>
+                        <li>11) S3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="number"
+                id="pekerjaansuami/istri"
+                placeholder="Pekerjaan Suami/Istri"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="pekerjaansuami/istri"
+              >Pekerjaan Suami/Istri (masukkan dua digit angka ex: 01)
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>01) Tidak Bekerja</li>
+                        <li>02) Nelayan</li>
+                        <li>03) Petani</li>
+                        <li>04) Peternak</li>
+                        <li>05) PNS/TNI/Polri</li>
+                        <li>06) GTT/PTT</li>
+                        <li>07) Pedagang Kecil</li>
+                        <li>08) Pedagang Besar</li>
+                        <li>09) Karyawan Swasta</li>
+                        <li>10) Wirausaha</li>
+                        <li>11) Pensiunan</li>
+                        <li>12) Buruh</li>
+                        <li>13) Sudah Meninggal</li>
+                        <li>14) TKI</li>
+                        <li>15) Tidak Dapat Diterapkan</li>
+                        <li>16) Tidak Bekerja</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="number"
+                id="pekerjaansuami/istri"
+                placeholder="Pekerjaan Suami/Istri"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="pekerjaansuami/istri"
+              >Penghasilan bulanan (masukkan dua digit angka ex: 01)
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>01) < Rp. 500.000</li>
+                        <li>02) Rp. 500.000-Rp.999.999</li>
+                        <li>03) Rp. 1.000.000-Rp.1.999.999</li>
+                        <li>04) Rp.2.000.000-Rp.4.999.999</li>
+                        <li>05) Rp.5.000.000-Rp.20.000.000</li>
+                        <li>06) > Rp.20.000.000</li>
+                        <li>07) Tidak Berpenghasilan</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="number"
+                id="pekerjaansuami/istri"
+                placeholder="Pekerjaan Suami/Istri"
+                required
+              />
+            </label>
+          </div>
+
+          <br />
+          <h4>Kontak</h4>
+          <hr class="text-primary" />
+
+          <div class="form-group pt-2">
+            <label class="form-label form-inline" for="nip"
+              >Nomor telepon Rumah
+              <input
+                class="form-input"
+                type="number"
+                id="nip"
+                placeholder="NIP"
+            /></label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="nip"
+              >Nomor HP
+              <input
+                class="form-input"
+                type="number"
+                id="nip"
+                placeholder="NIP"
+            /></label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="nip"
+              >Email
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="nip"
+                placeholder="NIP"
+            /></label>
+          </div>
+
+          <br />
+          <h3 class="text-center bg-primary p-2">DATA RINCIAN PESERTA DIDIK</h3>
+
+          <h4>Data Priodik</h4>
+          <hr class="text-primary" />
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="nip"
+              >Tinggi badan
+              <input
+                class="form-input"
+                type="number"
+                id="nip"
+                placeholder="NIP"
+            /></label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="nip"
+              >Berat badan
+              <input
+                class="form-input"
+                type="number"
+                id="nip"
+                placeholder="NIP"
+            /></label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="nip"
+              >Lingkar kepala
+              <input
+                class="form-input"
+                type="number"
+                id="nip"
+                placeholder="NIP"
+            /></label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Jarak Tempat Tinggal</label>
+            <label class="form-radio">
+              <input type="radio" name="gender" checked />
+              <i class="form-icon"></i> kurang dari 1 km
+            </label>
+            <label class="form-radio">
+              <input type="radio" name="gender" />
+              <i class="form-icon"></i> lebih dari 1 km
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="nip"
+              >Sebutkan dalam kilometer
+              <input
+                class="form-input"
+                type="number"
+                id="nip"
+                placeholder="NIP"
+            /></label>
+          </div>
+
+          <div class="form-group form-inline">
+            <label class="form-label" for="nip">Waktu tempuh ke sekolah</label>
+
+            <div class="input-group">
+              <input type="text" class="form-input" placeholder="Jam" />
+              <span class="input-group-addon">Jam</span>
+            </div>
+
+            <div class="input-group">
+              <input type="text" class="form-input" placeholder="Menit" />
+              <span class="input-group-addon">Menit</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="nip"
+              >Julah Saudara Kandung
+              <input
+                class="form-input"
+                type="number"
+                id="nip"
+                placeholder="NIP"
+            /></label>
+          </div>
+
+          <h4>Prestasi</h4>
+          <hr class="text-primary" />
+
+          <table class="table">
+            <thead>
+              <tr>
+                <p>(masukkan dua digit angka ex: 01)</p>
+                <th>
+                  Jenis
+                  <div class="popover popover-right">
+                    <button
+                      class="btn btn-primary btn-action s-circle btn-sm text-small"
+                    >
+                      ?
+                    </button>
+                    <div class="popover-container">
+                      <div class="card">
+                        <div class="text-small">
+                          <ul>
+                            <li>Sains</li>
+                            <li>Seni</li>
+                            <li>Olahraga</li>
+                            <li>Lain-lain</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </th>
+                <th>
+                  Tingkat
+                  <div class="popover popover-right">
+                    <button
+                      class="btn btn-primary btn-action s-circle btn-sm text-small"
+                    >
+                      ?
+                    </button>
+                    <div class="popover-container">
+                      <div class="card">
+                        <div class="text-small">
+                          <ul>
+                            <li>Sekolah</li>
+                            <li>Kecamatan</li>
+                            <li>Kabupaten</li>
+                            <li>Provinsi</li>
+                            <li>Nasional</li>
+                            <li>Internasional</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </th>
+                <th>Nama Prestasi</th>
+                <th>Tahun</th>
+                <th>Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="nip"
+                    placeholder="NIP"
+                  />
+                </td>
+                <td>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="nip"
+                    placeholder="NIP"
+                  />
+                </td>
+                <td>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="nip"
+                    placeholder="NIP"
+                  />
+                </td>
+                <td>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="nip"
+                    placeholder="NIP"
+                  />
+                </td>
+                <td>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="nip"
+                    placeholder="NIP"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <br />
+          <h4>Beasiswa</h4>
+          <hr class="text-primary" />
+          <table class="table">
+            <thead>
+              <tr>
+                <p>(masukkan dua digit angka ex: 01)</p>
+                <th>
+                  Jenis
+                  <div class="popover popover-right">
+                    <button
+                      class="btn btn-primary btn-action s-circle btn-sm text-small"
+                    >
+                      ?
+                    </button>
+                    <div class="popover-container">
+                      <div class="card">
+                        <div class="text-small">
+                          <ul>
+                            <li>Anak Berprestasi</li>
+                            <li>Anak Miskin</li>
+                            <li>Pendidikan</li>
+                            <li>Unggulan</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </th>
+                <th>Keterangan</th>
+                <th>Tahun Mulai</th>
+                <th>Tahun Selesai</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="nip"
+                    placeholder="NIP"
+                  />
+                </td>
+                <td>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="nip"
+                    placeholder="NIP"
+                  />
+                </td>
+                <td>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="nip"
+                    placeholder="NIP"
+                  />
+                </td>
+                <td>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="nip"
+                    placeholder="NIP"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <br />
+          <h4>Kesejahteraan Peserta Didik</h4>
+          <hr class="text-primary" />
+
+          <div class="form-group pt-2">
+            <label class="form-label form-inline" for="pekerjaansuami/istri"
+              >Jenis Kesejahteraan (masukkan dua digit angka ex: 01)
+              <div class="popover popover-right">
+                <button class="btn btn-primary btn-action s-circle btn-sm">
+                  ?
+                </button>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="text-small">
+                      <ul>
+                        <li>01) PKH</li>
+                        <li>02) PIP</li>
+                        <li>03) Kartu Perlindungan Sosial</li>
+                        <li>04) Kartu Keluarga Sejahtera</li>
+                        <li>05) Kartu Kesehatan</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                class="form-input"
+                type="number"
+                id="pekerjaansuami/istri"
+                placeholder="Pekerjaan Suami/Istri"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="nip"
+              >Julah Saudara Kandung
+              <input
+                class="form-input"
+                type="number"
+                id="nip"
+                placeholder="NIP"
+            /></label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-inline" for="nip"
+              >Nama di Kartu
+              <input
+                class="form-input"
+                type="number"
+                id="nip"
+                placeholder="NIP"
+            /></label>
+          </div>
+
+          <br />
+          <input type="submit" value="Submit" class="btn" />
+        </fieldset>
+      </form>
+    </div>
+
+    <script src="assets/bouncer/bouncer.polyfills.min.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>
