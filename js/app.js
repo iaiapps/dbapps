@@ -48,3 +48,11 @@ for (var i = 0; i < btnmodal.length; i++) {
   btnmodal[i].addEventListener("click", open);
   closemodal[i].addEventListener("click", close);
 }
+
+// code untuk tombol edit
+const tomboledit = document.getElementById("tomboledit");
+const divedit = document.getElementById("divedit");
+function bukaedit() {
+  divedit.classList.toggle("d-hide");
+}
+tomboledit.addEventListener("click", bukaedit);
