@@ -1,16 +1,16 @@
 //code untuk sidebar
-let sidebar = document.getElementById("sidebar");
-let openclose = document.getElementById("openclose");
-let page = document.getElementById("page");
+const sidebar = document.getElementById("sidebar");
+const openclose = document.getElementById("openclose");
+const page = document.getElementById("page");
 
-let judul = document.querySelector(".judul");
-let title = document.querySelectorAll(".title");
-let menuitem = document.querySelectorAll(".menuitem");
+const judul = document.querySelector(".judul");
+const title = document.querySelectorAll(".title");
+const menuitem = document.querySelectorAll(".menuitem");
 
-let foto = document.querySelector(".foto");
-let judulalt = document.querySelector(".judulalt");
+const foto = document.querySelector(".foto");
+const judulalt = document.querySelector(".judulalt");
 
-function bukatutup() {
+const bukatutup = function bukatutup() {
   sidebar.classList.toggle("sidebaropen");
   page.classList.toggle("pageopen");
 
@@ -25,13 +25,13 @@ function bukatutup() {
     menuitem[i].classList.toggle("menucenter");
     title[i].classList.toggle("titleclose");
   }
-}
+};
 openclose.addEventListener("click", bukatutup);
 
 //code untuk modal
-let btnmodal = document.querySelectorAll(".btnmodal");
-let modal = document.querySelectorAll(".modal");
-let closemodal = document.querySelectorAll(".closemodal");
+const btnmodal = document.querySelectorAll(".btnmodal");
+const modal = document.querySelectorAll(".modal");
+const closemodal = document.querySelectorAll(".closemodal");
 
 function open() {
   for (var i = 0; i < modal.length; i++) {
@@ -49,10 +49,29 @@ for (var i = 0; i < btnmodal.length; i++) {
   closemodal[i].addEventListener("click", close);
 }
 
-// code untuk tombol edit
-const tomboledit = document.getElementById("tomboledit");
-const divedit = document.getElementById("divedit");
-function bukaedit() {
-  divedit.classList.toggle("d-hide");
-}
-tomboledit.addEventListener("click", bukaedit);
+// code untuk tombol editform
+// const tomboledit = document.getElementById("tomboledit");
+// const divedit = document.getElementById("divedit");
+// function bukaedit() {
+//   divedit.classList.toggle("d-hide");
+// }
+// tomboledit.addEventListener("click", bukaedit);
+
+//code untuk sweetalert2
+const sw = document.querySelector("#tomboledit");
+sw.addEventListener("click", function () {
+  Swal.fire({
+    title: "Apakah anda yakin akan mengedit?",
+    showDenyButton: true,
+    showCancelButton: false,
+    confirmButtonText: `Edit`,
+    denyButtonText: `Batal`,
+  }).then((result) => {
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+      divedit.classList.remove("d-hide");
+    } else if (result.isDenied) {
+      Swal.fire("Changes are not saved", "", "info");
+    }
+  });
+});

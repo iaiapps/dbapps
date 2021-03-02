@@ -155,7 +155,10 @@ body {
   padding: 20px;
 }
 
-/* ini css form */
+/* ini css sweetalert */
+.fonkecil {
+  font-size: 12px;
+}
 
 @media (max-width: 600px) {
   /* ini css sidebar */
