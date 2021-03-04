@@ -155,9 +155,12 @@ body {
   padding: 20px;
 }
 
-/* ini css sweetalert */
-.fonkecil {
-  font-size: 12px;
+/* ini css tab */
+
+.tabcontent {
+  display: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
 }
 
 @media (max-width: 600px) {

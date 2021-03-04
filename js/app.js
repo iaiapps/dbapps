@@ -58,20 +58,38 @@ for (var i = 0; i < btnmodal.length; i++) {
 // tomboledit.addEventListener("click", bukaedit);
 
 //code untuk sweetalert2
-const sw = document.querySelector("#tomboledit");
-sw.addEventListener("click", function () {
-  Swal.fire({
-    title: "Apakah anda yakin akan mengedit?",
-    showDenyButton: true,
-    showCancelButton: false,
-    confirmButtonText: `Edit`,
-    denyButtonText: `Batal`,
-  }).then((result) => {
-    /* Read more about isConfirmed, isDenied below */
-    if (result.isConfirmed) {
-      divedit.classList.remove("d-hide");
-    } else if (result.isDenied) {
-      Swal.fire("Changes are not saved", "", "info");
-    }
-  });
-});
+// const sw = document.querySelector("#tomboledit");
+// sw.addEventListener("click", function () {
+//   Swal.fire({
+//     title: "Apakah anda yakin akan mengedit?",
+//     showDenyButton: true,
+//     showCancelButton: false,
+//     confirmButtonText: `Edit`,
+//     denyButtonText: `Batal`,
+//   }).then((result) => {
+//     /* Read more about isConfirmed, isDenied below */
+//     if (result.isConfirmed) {
+//       divedit.classList.remove("d-hide");
+//     } else if (result.isDenied) {
+//       Swal.fire("Changes are not saved", "", "info");
+//     }
+//   });
+// });
+
+// kode utnuk tabs
+//untuk simulasi awal klik
+document.getElementById("defaultOpen").click();
+//untuk klik
+function openTab(evt, tabId) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabId).style.display = "block";
+  evt.currentTarget.className += " active";
+}

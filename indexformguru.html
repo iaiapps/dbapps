@@ -68,8 +68,173 @@
       </header>
 
       <div class="leftright">
-        <h3 class="pt-2">Data Guru</h3>
+        <h3 class="bg-primary p-2">Rincian Data</h3>
+
+        <!-- tombol tab -->
+        <div class="tab tab-block">
+          <li class="tab-item">
+            <a
+              href="#"
+              id="defaultOpen"
+              class="tablinks"
+              onclick="openTab(event, '1')"
+            >
+              Identitas
+            </a>
+          </li>
+          <li class="tab-item">
+            <a href="#" class="tablinks" onclick="openTab(event, '2')">
+              Data Pribadi
+            </a>
+          </li>
+          <li class="tab-item">
+            <a href="#" class="tablinks" onclick="openTab(event, '3')">
+              Tokyo
+            </a>
+          </li>
+        </div>
+
+        <!-- isi tab -->
+        <div id="1" class="tabcontent">
+          <br />
+          <h4>Identitas PTK</h4>
+          <hr class="text-primary" />
+          <table class="table table-striped tab-content" id="1">
+            <thead>
+              <tr>
+                <th>Form</th>
+                <th>Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="active">
+                <td>Nama Lengkap</td>
+                <td>Ali</td>
+              </tr>
+              <tr>
+                <td>NIK</td>
+                <td>1234567890987654</td>
+              </tr>
+              <tr>
+                <td>Jenis Kelamin</td>
+                <td>Laki-laki</td>
+              </tr>
+              <tr>
+                <td>Tempat Lahir</td>
+                <td>Jember</td>
+              </tr>
+              <tr>
+                <td>Tanggal Lahir</td>
+                <td>13 Maret 2021</td>
+              </tr>
+              <tr>
+                <td>Nama Ibu Kandung</td>
+                <td>1234567890987654</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="2" class="tabcontent">
+          <br />
+          <h4>Data Pribadi</h4>
+          <hr class="text-primary" />
+          <table class="table table-striped tab-content" id="2">
+            <thead>
+              <tr>
+                <th>Form</th>
+                <th>Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="active">
+                <td>Alamat Jalan</td>
+                <td>jl. Danau Toba</td>
+              </tr>
+              <tr>
+                <td>RT</td>
+                <td>001</td>
+              </tr>
+              <tr>
+                <td>RW</td>
+                <td>005</td>
+              </tr>
+              <tr>
+                <td>Dusun</td>
+                <td>Krajan</td>
+              </tr>
+              <tr>
+                <td>Desa/Kelurahan</td>
+                <td>Sumbersari</td>
+              </tr>
+              <tr>
+                <td>Kecamatan</td>
+                <td>Sumbersari</td>
+              </tr>
+              <tr>
+                <td>Kabupaten/Kota</td>
+                <td>Jember</td>
+              </tr>
+              <tr>
+                <td>Provinsi</td>
+                <td>Jawa Timur</td>
+              </tr>
+              <tr>
+                <tr>
+                  <td>Kode POS</td>
+                  <td>68194</td>
+                </tr>
+                <td>Lintang</td>
+                <td>30.9888w</td>
+              </tr>
+              <tr>
+                <td>Bujur</td>
+                <td>98.0765</td>
+              </tr>
+              <tr>
+                <td>Agama & Kepercayaan</td>
+                <td>Islam</td>
+              </tr>
+              <tr>
+                <td>NPWP</td>
+                <td>1234567890987654321</td>
+              </tr>
+              <tr>
+                <td>Nama Wajib Pajak</td>
+                <td>Ali</td>
+              </tr>
+              <tr>
+                <td>Kewarganegaraan</td>
+                <td>Indonesia</td>
+              </tr>
+              <tr>
+                <td>Status Kawin</td>
+                <td>kawin</td>
+              </tr>
+              <tr>
+                <td>Nama Suami/Istri</td>
+                <td>Fatimah</td>
+              </tr>
+              <tr>
+                <td>Pekerjaan Suami/Istri</td>
+                <td>68194</td>
+              </tr>
+              <tr>
+                <td>NIP</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="3" class="tabcontent">
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+        <!-- <h3 class="pt-2">Data Guru</h3>
         <a href="#" id="tomboledit" class="btn btn-primary"> Edit Form</a>
+        <br /> -->
 
         <!-- <div class="form-group">
           <label class="form-switch">
@@ -78,7 +243,7 @@
           </label>
         </div> -->
 
-        <div id="divedit" class="columns py-2 d-hide">
+        <!-- <div id="divedit" class="columns py-2 d-hide">
           <div class="column col-xs-12">
             <a href="#" class="btn btn-primary col-12"> Edit Data </a>
           </div>
@@ -92,59 +257,7 @@
             <a href="#" class="btn btn-primary col-12"> Edit Data </a>
           </div>
         </div>
-
-        <table class="table">
-          <thead>
-            <tr>
-              <th>nama siswa</th>
-              <th>kelas</th>
-              <th>action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="active">
-              <td>ikrom</td>
-              <td>4 Ali bin Abi Thalib</td>
-              <td>
-                <a href="#" class="btn btn-primary">
-                  <span><i class="icon icon-search"></i></span>
-                </a>
-                <a href="#" class="btn btn-primary">
-                  <span><i class="icon icon-edit"></i></span>
-                </a>
-                <a href="#" class="btn btn-primary">
-                  <span><i class="icon icon-delete"></i></span>
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div>
-          <ul class="pagination">
-            <li class="page-item disabled">
-              <a href="#" class="btn" tabindex="-1">Previous</a>
-            </li>
-            <li class="page-item active">
-              <a href="#" class="btn btn-action">1</a>
-            </li>
-            <li class="page-item">
-              <a href="#" class="btn btn-action">2</a>
-            </li>
-            <li class="page-item">
-              <a href="#" class="btn btn-action">3</a>
-            </li>
-            <li class="page-item">
-              <span class="btn btn-action">...</span>
-            </li>
-            <li class="page-item">
-              <a href="#" class="btn btn-action">12</a>
-            </li>
-            <li class="page-item">
-              <a href="#" class="btn">Next</a>
-            </li>
-          </ul>
-        </div>
+        <br /> -->
       </div>
     </div>
 
