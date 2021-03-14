@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <div id="page" class="page bg-gray">
+    <div id="page" class="page">
       <header class="navbar">
         <section class="navbar-section m-2">
           <button id="openclose" class="btn btn-primary btn-lg btn-action m-2">
@@ -67,83 +67,307 @@
       </header>
 
       <div class="leftright">
-        <h3>Data Siswa</h3>
-        <a href="#" class="btn btn-primary"> Tambah Data </a>
+        <h3 class="bg-primary p-2">Rincian Data</h3>
 
-        <table class="table">
-          <thead>
-            <tr>
-              <th>nama siswa</th>
-              <th>kelas</th>
-              <th>action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="active">
-              <td>ikrom</td>
-              <td>4 Ali bin Abi Thalib</td>
-              <td>
-                <a href="#" class="btn btn-primary">
-                  <span><i class="icon icon-search"></i></span>
-                </a>
-                <a href="#" class="btn btn-primary">
-                  <span><i class="icon icon-edit"></i></span>
-                </a>
-                <a href="#" class="btn btn-primary">
-                  <span><i class="icon icon-delete"></i></span>
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div>
-          <ul class="pagination">
-            <li class="page-item disabled">
-              <a href="#" class="btn" tabindex="-1">Previous</a>
-            </li>
-            <li class="page-item active">
-              <a href="#" class="btn btn-action">1</a>
-            </li>
-            <li class="page-item">
-              <a href="#" class="btn btn-action">2</a>
-            </li>
-            <li class="page-item">
-              <a href="#" class="btn btn-action">3</a>
-            </li>
-            <li class="page-item">
-              <span class="btn btn-action">...</span>
-            </li>
-            <li class="page-item">
-              <a href="#" class="btn btn-action">12</a>
-            </li>
-            <li class="page-item">
-              <a href="#" class="btn">Next</a>
-            </li>
-          </ul>
+        <div class="tab tab-block">
+          <li class="tab-item">
+            <a
+              href="#"
+              id="defaultOpen"
+              class="tablinks"
+              onclick="openTab(event, '1')"
+            >
+              Identitas
+            </a>
+          </li>
+          <li class="tab-item">
+            <a href="#" class="tablinks" onclick="openTab(event, '2')">
+              Data Ayah
+            </a>
+          </li>
+          <li class="tab-item">
+            <a href="#" class="tablinks" onclick="openTab(event, '3')">
+              Data Ibu
+            </a>
+          </li>
+          <li class="tab-item">
+            <a href="#" class="tablinks" onclick="openTab(event, '4')">
+              Data Wali
+            </a>
+          </li>
+          <li class="tab-item">
+            <a href="#" class="tablinks" onclick="openTab(event, '5')">
+              Kompetensi Khusus
+            </a>
+          </li>
         </div>
 
-        <!-- <div>
-          <a href="#" class="btn btn-primary btnmodal"> Open Modal </a>
-
-          <div class="modal" id="modal-id">
-            <a href="#close" class="modal-overlay" aria-label="Close"></a>
-            <div class="modal-container">
-              <div class="modal-header">
-                <a
-                  href="#close"
-                  class="btn btn-clear float-right closemodal"
-                  aria-label="Close"
-                ></a>
-                <div class="modal-title h5">Modal title</div>
-              </div>
-              <div class="modal-body">
-                <div class="content">sssssssssssssssss</div>
-              </div>
-              <div class="modal-footer">...</div>
-            </div>
+        <!-- isi tab -->
+        <div id="1" class="tabcontent">
+          <br />
+          <div class="clearfix">
+            <h4 class="float-left">Identitas Peserta Didik</h4>
+            <a class="btn btn-primary float-right" href="#">edit form</a>
           </div>
-        </div> -->
+          <hr class="text-primary" />
+          <table class="table table-striped tab-content" id="1">
+            <thead>
+              <tr>
+                <th>Form</th>
+                <th>Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nama Lengkap</td>
+                <td>Ali</td>
+              </tr>
+              <tr>
+                <td>Jenis Kelamin</td>
+                <td>Laki-laki</td>
+              </tr>
+              <tr>
+                <td>NISN</td>
+                <td>1234567890987654</td>
+              </tr>
+              <tr>
+                <td>NIK</td>
+                <td>1234567890987654</td>
+              </tr>
+              <tr>
+                <td>No. KK</td>
+                <td>1234567890987654</td>
+              </tr>
+
+              <tr>
+                <td>Tempat Lahir</td>
+                <td>Jember</td>
+              </tr>
+              <tr>
+                <td>Tanggal Lahir</td>
+                <td>13 Maret 2021</td>
+              </tr>
+              <tr>
+                <td>No Registrasi Akta Lahir</td>
+                <td>1234567890987654</td>
+              </tr>
+              <tr>
+                <td>Agama & Kepercayaan</td>
+                <td>Islam</td>
+              </tr>
+              <tr>
+                <td>Kewarganegaraan</td>
+                <td>Indonesia</td>
+              </tr>
+              <tr>
+                <td>Berkebutuhan Khusus</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Alamat Jalan</td>
+                <td>jl. Danau Toba</td>
+              </tr>
+              <tr>
+                <td>RT</td>
+                <td>001</td>
+              </tr>
+              <tr>
+                <td>RW</td>
+                <td>005</td>
+              </tr>
+              <tr>
+                <td>Dusun</td>
+                <td>Krajan</td>
+              </tr>
+              <tr>
+                <td>Desa/Kelurahan</td>
+                <td>Sumbersari</td>
+              </tr>
+              <tr>
+                <td>Kecamatan</td>
+                <td>Sumbersari</td>
+              </tr>
+              <tr>
+                <td>Kabupaten/Kota</td>
+                <td>Jember</td>
+              </tr>
+              <tr>
+                <td>Provinsi</td>
+                <td>Jawa Timur</td>
+              </tr>
+              <tr>
+                <td>Kode POS</td>
+                <td>68194</td>
+              </tr>
+              <tr>
+                <td>Lintang</td>
+                <td>30.9888w</td>
+              </tr>
+              <tr>
+                <td>Bujur</td>
+                <td>98.0765</td>
+              </tr>
+
+              <tr>
+                <td>Tempat Tinggal</td>
+                <td>Bersama Orang Tua</td>
+              </tr>
+              <tr>
+                <td>Moda Transportasi</td>
+                <td>Jalan Kaki</td>
+              </tr>
+
+              <tr>
+                <td>Anak Ke Berapa</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Apakah Punya KIP</td>
+                <td>Ya</td>
+              </tr>
+              <tr>
+                <td>Penerima KIP</td>
+                <td>Tidak</td>
+              </tr>
+              <tr>
+                <td>Alasan Menolak KIP</td>
+                <td>aaaa</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="2" class="tabcontent">
+          <br />
+          <h4>Data Ayah Kandung</h4>
+          <hr class="text-primary" />
+          <table class="table table-striped tab-content" id="2">
+            <thead>
+              <tr>
+                <th>Form</th>
+                <th>Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="active">
+                <td>Nama Ayah Kandung</td>
+                <td>aaaa</td>
+              </tr>
+              <tr>
+                <td>NIK Ayah</td>
+                <td>12345</td>
+              </tr>
+              <tr>
+                <td>Tahun Lahir</td>
+                <td>123456</td>
+              </tr>
+              <tr>
+                <td>Pendidikan</td>
+                <td>123456</td>
+              </tr>
+              <tr>
+                <td>Pekerjaan</td>
+                <td>123456</td>
+              </tr>
+              <tr>
+                <td>Penghasilan Bulanan</td>
+                <td>abcd</td>
+              </tr>
+              <tr>
+                <td>Berkebutuhan khusus</td>
+                <td>Tidak</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="3" class="tabcontent">
+          <br />
+          <h4>Data Ibu Kandung</h4>
+          <hr class="text-primary" />
+          <table class="table table-striped tab-content" id="2">
+            <thead>
+              <tr>
+                <th>Form</th>
+                <th>Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="active">
+                <td>Nama Ibu Kandung</td>
+                <td>aaaa</td>
+              </tr>
+              <tr>
+                <td>NIK Ibu</td>
+                <td>12345</td>
+              </tr>
+              <tr>
+                <td>Tahun Lahir</td>
+                <td>123456</td>
+              </tr>
+              <tr>
+                <td>Pendidikan</td>
+                <td>123456</td>
+              </tr>
+              <tr>
+                <td>Pekerjaan</td>
+                <td>123456</td>
+              </tr>
+              <tr>
+                <td>Penghasilan Bulanan</td>
+                <td>abcd</td>
+              </tr>
+              <tr>
+                <td>Berkebutuhan khusus</td>
+                <td>Tidak</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="4" class="tabcontent">
+          <br />
+          <h4>Data Wali</h4>
+          <hr class="text-primary" />
+          <table class="table table-striped tab-content" id="2">
+            <thead>
+              <tr>
+                <th>Form</th>
+                <th>Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="active">
+                <td>Nama Wali</td>
+                <td>aaaa</td>
+              </tr>
+              <tr>
+                <td>NIK Wali</td>
+                <td>12345</td>
+              </tr>
+              <tr>
+                <td>Tahun Lahir</td>
+                <td>123456</td>
+              </tr>
+              <tr>
+                <td>Pendidikan</td>
+                <td>123456</td>
+              </tr>
+              <tr>
+                <td>Pekerjaan</td>
+                <td>123456</td>
+              </tr>
+              <tr>
+                <td>Penghasilan Bulanan</td>
+                <td>abcd</td>
+              </tr>
+              <tr>
+                <td>Berkebutuhan khusus</td>
+                <td>Tidak</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 

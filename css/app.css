@@ -13,7 +13,7 @@ body {
 
 /* ini css sidebar */
 .sidebar {
-  width: 300px;
+  width: 270px;
   left: 0;
   right: 0;
   height: 100%;
@@ -112,7 +112,7 @@ body {
 /* ini css page */
 .page {
   height: 100%;
-  margin-left: 300px;
+  margin-left: 270px;
   transition: 0.3s;
 }
 .pageopen {
