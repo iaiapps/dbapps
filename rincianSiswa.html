@@ -87,9 +87,10 @@
               Data Wali
             </a>
           </li>
+
           <li class="tab-item">
             <a href="#" class="tablinks" onclick="openTab(event, '5')">
-              Kompetensi Khusus
+              Prestasi
             </a>
           </li>
         </div>
@@ -99,7 +100,11 @@
           <br />
           <div class="clearfix">
             <h4 class="float-left">Identitas Peserta Didik</h4>
-            <a class="btn btn-primary float-right" href="#">edit form</a>
+            <a
+              class="btn btn-primary float-right"
+              href="formSiswaIdentitas.html"
+              >edit form</a
+            >
           </div>
           <hr class="text-primary" />
           <table class="table table-striped tab-content" id="1">
@@ -121,6 +126,10 @@
               <tr>
                 <td>NISN</td>
                 <td>1234567890987654</td>
+              </tr>
+              <tr>
+                <td>NIS</td>
+                <td>1234</td>
               </tr>
               <tr>
                 <td>NIK</td>
@@ -214,16 +223,8 @@
                 <td>1</td>
               </tr>
               <tr>
-                <td>Apakah Punya KIP</td>
-                <td>Ya</td>
-              </tr>
-              <tr>
-                <td>Penerima KIP</td>
-                <td>Tidak</td>
-              </tr>
-              <tr>
-                <td>Alasan Menolak KIP</td>
-                <td>aaaa</td>
+                <td>Jumlah saudara</td>
+                <td>1</td>
               </tr>
             </tbody>
           </table>
@@ -231,7 +232,14 @@
 
         <div id="2" class="tabcontent">
           <br />
-          <h4>Data Ayah Kandung</h4>
+
+          <div class="clearfix">
+            <h4 class="float-left">Data Ayah Kandung</h4>
+            <a class="btn btn-primary float-right" href="formSiswaAyah.html"
+              >edit form</a
+            >
+          </div>
+
           <hr class="text-primary" />
           <table class="table table-striped tab-content" id="2">
             <thead>
@@ -241,7 +249,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="active">
+              <tr>
                 <td>Nama Ayah Kandung</td>
                 <td>aaaa</td>
               </tr>
@@ -266,8 +274,8 @@
                 <td>abcd</td>
               </tr>
               <tr>
-                <td>Berkebutuhan khusus</td>
-                <td>Tidak</td>
+                <td>No. Telp/HP</td>
+                <td>123456789</td>
               </tr>
             </tbody>
           </table>
@@ -275,7 +283,12 @@
 
         <div id="3" class="tabcontent">
           <br />
-          <h4>Data Ibu Kandung</h4>
+          <div class="clearfix">
+            <h4 class="float-left">Data Ibu Kandung</h4>
+            <a class="btn btn-primary float-right" href="formSiswaIbu.html"
+              >edit form</a
+            >
+          </div>
           <hr class="text-primary" />
           <table class="table table-striped tab-content" id="2">
             <thead>
@@ -285,7 +298,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="active">
+              <tr>
                 <td>Nama Ibu Kandung</td>
                 <td>aaaa</td>
               </tr>
@@ -310,8 +323,8 @@
                 <td>abcd</td>
               </tr>
               <tr>
-                <td>Berkebutuhan khusus</td>
-                <td>Tidak</td>
+                <td>No. Telp/HP</td>
+                <td>123456789</td>
               </tr>
             </tbody>
           </table>
@@ -319,7 +332,12 @@
 
         <div id="4" class="tabcontent">
           <br />
-          <h4>Data Wali</h4>
+          <div class="clearfix">
+            <h4 class="float-left">Data Wali</h4>
+            <a class="btn btn-primary float-right" href="formSiswaWali.html"
+              >edit form</a
+            >
+          </div>
           <hr class="text-primary" />
           <table class="table table-striped tab-content" id="2">
             <thead>
@@ -329,7 +347,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="active">
+              <tr>
                 <td>Nama Wali</td>
                 <td>aaaa</td>
               </tr>
@@ -354,8 +372,41 @@
                 <td>abcd</td>
               </tr>
               <tr>
-                <td>Berkebutuhan khusus</td>
-                <td>Tidak</td>
+                <td>No. Telp/HP</td>
+                <td>123456789</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="5" class="tabcontent">
+          <br />
+          <div class="clearfix">
+            <h4 class="float-left">Data Prestasi</h4>
+            <a class="btn btn-primary float-right" href="formSiswaPrestasi.html"
+              >edit form</a
+            >
+          </div>
+          <hr class="text-primary" />
+          <table class="table table-striped tab-content" id="8">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Jenis Prestasi</th>
+                <th>Tingkat</th>
+                <th>Nama Prestasi</th>
+                <th>Tahun</th>
+                <th>Penyelenggara</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>aaaabbbboooo</td>
+                <td>kandung</td>
+                <td>SD</td>
+                <td>123345</td>
+                <td>L</td>
+                <td>jember</td>
               </tr>
             </tbody>
           </table>
