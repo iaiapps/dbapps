@@ -49,36 +49,13 @@ for (var i = 0; i < btnmodal.length; i++) {
   closemodal[i].addEventListener("click", close);
 }
 
-// code untuk tombol editform
-// const tomboledit = document.getElementById("tomboledit");
-// const divedit = document.getElementById("divedit");
-// function bukaedit() {
-//   divedit.classList.toggle("d-hide");
-// }
-// tomboledit.addEventListener("click", bukaedit);
-
-//code untuk sweetalert2
-// const sw = document.querySelector("#tomboledit");
-// sw.addEventListener("click", function () {
-//   Swal.fire({
-//     title: "Apakah anda yakin akan mengedit?",
-//     showDenyButton: true,
-//     showCancelButton: false,
-//     confirmButtonText: `Edit`,
-//     denyButtonText: `Batal`,
-//   }).then((result) => {
-//     /* Read more about isConfirmed, isDenied below */
-//     if (result.isConfirmed) {
-//       divedit.classList.remove("d-hide");
-//     } else if (result.isDenied) {
-//       Swal.fire("Changes are not saved", "", "info");
-//     }
-//   });
-// });
-
 // kode utnuk tabs
 //untuk simulasi awal klik
-document.getElementById("defaultOpen").click();
+const defaultOpen = document.getElementById("defaultOpen");
+if (defaultOpen !== null) {
+  defaultOpen.click();
+}
+
 //untuk klik
 function openTab(evt, tabId) {
   var i, tabcontent, tablinks;
@@ -92,4 +69,15 @@ function openTab(evt, tabId) {
   }
   document.getElementById(tabId).style.display = "block";
   evt.currentTarget.className += " active";
+}
+
+//panel logout
+const tbllogout = document.getElementById("tbllogout");
+const panellogout = document.getElementById("panellogout");
+function bukalogout() {
+  panellogout.classList.toggle("d-none");
+}
+
+if (tbllogout !== null) {
+  tbllogout.addEventListener("click", bukalogout);
 }

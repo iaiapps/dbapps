@@ -163,6 +163,12 @@ body {
   animation: fadeEffect 1s;
 }
 
+/* ini css logout */
+.logout {
+  position: absolute;
+  right: 0;
+}
+
 @media (max-width: 600px) {
   /* ini css sidebar */
   .sidebar {
