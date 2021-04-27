@@ -7,7 +7,7 @@
 
 html,
 body {
-  height: auto;
+  height: 100%;
   width: 100%;
   min-height: 100%;
 }
@@ -145,7 +145,7 @@ body {
   box-shadow: 0 0 20px #ccc;
 }
 .kiri img {
-  width: 500px;
+  width: 450px;
   height: auto;
 }
 .kiri {
@@ -196,6 +196,7 @@ body {
 
 @media (max-width: 600px) {
   html {
+    height: auto;
     position: relative;
   }
 
