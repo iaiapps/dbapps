@@ -26,7 +26,10 @@ const bukatutup = function bukatutup() {
     title[i].classList.toggle("titleclose");
   }
 };
-openclose.addEventListener("click", bukatutup);
+
+if (openclose !== null) {
+  openclose.addEventListener("click", bukatutup);
+}
 
 //code untuk modal
 const btnmodal = document.querySelectorAll(".btnmodal");
@@ -80,4 +83,16 @@ function bukalogout() {
 
 if (tbllogout !== null) {
   tbllogout.addEventListener("click", bukalogout);
+}
+
+//login
+const toast = document.getElementById("toast");
+const closetoast = document.getElementById("closetoast");
+
+function tutuptoast() {
+  toast.classList.toggle("d-none");
+}
+
+if (closetoast !== null) {
+  closetoast.addEventListener("click", tutuptoast);
 }
