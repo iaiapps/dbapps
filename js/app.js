@@ -85,7 +85,7 @@ if (tbllogout !== null) {
   tbllogout.addEventListener("click", bukalogout);
 }
 
-//login
+//login toast
 const toast = document.getElementById("toast");
 const closetoast = document.getElementById("closetoast");
 
@@ -95,4 +95,18 @@ function tutuptoast() {
 
 if (closetoast !== null) {
   closetoast.addEventListener("click", tutuptoast);
+}
+
+//pemberitahuan toast
+const pemberitahuantoast = document.getElementById("pemberitahuantoast");
+const closepemberitahuantoast = document.getElementById(
+  "closepemberitahuantoast"
+);
+
+function tutuppemberitahuantoast() {
+  pemberitahuantoast.classList.toggle("d-none");
+}
+
+if (closepemberitahuantoast !== null) {
+  closepemberitahuantoast.addEventListener("click", tutuppemberitahuantoast);
 }
